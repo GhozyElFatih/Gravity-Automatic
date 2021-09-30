@@ -2,20 +2,26 @@
 """
 Created on Mon Sep 27 18:31:49 2021
 
-@author: Acer
+@author: Ghozy El Fatih
 """
 area_name = ['north','south','west','east']
 
-N = input('Masukkan Batas Utara Area : ')
-S = input('Masukkan Batas Selatan Area : ')
-W = input('Masukkan Batas Barat Area : ')
-E = input('Masukkan Batas Timur Area : ')
+N = float(input('Masukkan Batas Utara Area : '))
+W = float(input('Masukkan Batas Barat Area : '))
+S = float(input('Masukkan Batas Selatan Area : '))
+while S <= N and S > 0:
+    S = float(input('Batas Area Tidak Sesuai, Masukkan Ulang Batas Selatan : '))
+    
+E = float(input('Masukkan Batas Timur Area : '))
+while E <= W and E > 0:
+    E = float(input('Batas Area Tidak Sesuai, Masukkan Ulang Batas Timur : '))
 
-area_input = [N,S,W,E]
+area_input = [str(N),str(S),str(W),str(E)]
 
 from selenium import webdriver
 
 url = "https://topex.ucsd.edu/cgi-bin/get_data.cgi"
+
 driver = webdriver.Chrome()
 driver.get(url)
 
@@ -28,12 +34,9 @@ get_topografi = driver.find_element_by_xpath("//input[@value='get data']").click
 import os
 import codecs
 
-path = 'C:/Users/Acer/OneDrive - UNIVERSITAS INDONESIA/Desktop'
-save_path = os.path.expanduser(path)
-
 def save_hasil(name):
     hasil_name = name+'.txt'
-    hasil_save = os.path.join(save_path, hasil_name)
+    hasil_save = os.path.join(hasil_name)
     hasil_object = codecs.open(hasil_save, "w", "utf-8")
     html = driver.page_source
     return (hasil_object.write(html))
@@ -63,15 +66,15 @@ data_overall = np.zeros((n,6))
 data_overall[:,:3] = data_topografi
 data_overall[:,3] = data_gravity[:,2]
 
-Long = data_overall[:,0]
-Lat = data_overall[:,1]
+Longitude = data_overall[:,0]
+Latitude = data_overall[:,1]
 Z = data_overall[:,2]
 FAA = data_overall[:,3]
-###
+
 BC = 0.04192 * Z
 
-matriks_1 = np.ones(n)
-G = np.vstack((matriks_1,BC)).T
+matrix_1 = np.ones(n)
+G = np.vstack((matrix_1,BC)).T
 Gt = G.T
 d = FAA.T
 
@@ -95,7 +98,7 @@ data_overall[:,5] = SBA
 np.savetxt('data_overall.txt',data_overall,fmt="%.3f",header="Long Lat Z FAA BC SBA")
 
 ngrid = 50
-long_grid= np.linspace(np.min(Long), np.max(Long), ngrid) #grid koordinat
+long_grid= np.linspace(np.min(Long), np.max(Long), ngrid)
 lat_grid= np.linspace(np.min(Lat), np.max(Lat), ngrid)
 x,y = np.meshgrid(long_grid, lat_grid)
 
@@ -105,12 +108,11 @@ import scipy.interpolate as inter
 interpolasi = inter.Rbf(Long,Lat,SBA,method='cubic')
 SBA_interpolasi = interpolasi(x,y)
 
-### Plotting
 plt.contourf(x,y,SBA_interpolasi,cmap='jet',levels=50)
 plt.colorbar(label='Percepatan Gravitasi (mGal)')
 mayor = plt.contour(x, y, SBA_interpolasi, colors='black', levels=5, linewidths=1)
 plt.contour(x,y,SBA_interpolasi,levels=25,linewidths=0.5)
-plt.suptitle('Data Simple Bouguer Anomaly pada Area Lat ({},{}) Long ({},{})'.format(N,S,W,E),
+plt.suptitle('Data Simple Bouguer Anomaly pada Area Lat ({},{}) Long ({},{})'.format(N,S,W,E,".2f"),
              fontsize='20',fontweight='bold')
 plt.xlabel('Longitude', fontsize='15')
 plt.ylabel('Latitude', fontsize='15')
