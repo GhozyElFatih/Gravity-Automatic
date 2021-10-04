@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 27 18:31:49 2021
+@author: Ghozy El Fatih
+For academic and non-profit purposes only
+Any question, suggestion, or anything, kindly reach me through fatih.el.ghozy@gmail.com
+"""
 area_name = ['north','south','west','east']
 
 N = float(input('Masukkan Batas Utara Area : '))
