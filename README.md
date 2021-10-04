@@ -7,7 +7,7 @@ I created code that could make you able to download, extract, process, and plot 
 
 How to get started?
 
-![image](https://user-images.githubusercontent.com/85453675/135860020-ef577d1d-b8f9-4fbc-ace7-dd6caa7c7f3f.png)(https://youtu.be/JIzfRTNMiEc)
+[![image](https://user-images.githubusercontent.com/85453675/135860020-ef577d1d-b8f9-4fbc-ace7-dd6caa7c7f3f.png)](https://youtu.be/JIzfRTNMiEc)
 
 ### 1. Make sure you have python IDE on your PC
 This code was written in python language. To run it, you need python IDE (of course) with the version 3.7 or above. You can use any IDE (my recommend : Spyder, PyCharm).
