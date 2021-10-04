@@ -7,15 +7,17 @@ Any question, suggestion, or anything, kindly reach me through fatih.el.ghozy@gm
 """
 area_name = ['north','south','west','east']
 
-N = float(input('Masukkan Batas Utara Area : '))
-W = float(input('Masukkan Batas Barat Area : '))
-S = float(input('Masukkan Batas Selatan Area : '))
-while S <= N and S > 0:
-    S = float(input('Batas Area Tidak Sesuai, Masukkan Ulang Batas Selatan : '))
+N = float(input('Input North Boundary : '))
+W = float(input('Input West Boundary : '))
+S = float(input('Input South Boundary : '))
+while S >= N:
+    S = float(input('The south boundary is wrong, try again : '))
     
-E = float(input('Masukkan Batas Timur Area : '))
-while E <= W and E > 0:
-    E = float(input('Batas Area Tidak Sesuai, Masukkan Ulang Batas Timur : '))
+E = float(input('Input East Boundary : '))
+while E <= W:
+    E = float(input('The east boundary is wrong, try again : '))
+
+print("Boundary is ready \n Downloading data, please wait...")
 
 area_input = [str(N),str(S),str(W),str(E)]
 
@@ -54,3 +56,4 @@ nama_gravity = 'gravity'
 save_hasil(nama_gravity)
 
 driver.close()
+print("Data downloaded succesfully!")
