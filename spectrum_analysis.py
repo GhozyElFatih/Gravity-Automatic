@@ -2,7 +2,9 @@
 """
 Created on Fri Oct  1 19:07:34 2021
 
-@author: Acer
+@author: Ghozy El Fatih
+For academic and non-profit purposes only
+Any question, suggestion, or anything, kindly reach me through fatih.el.ghozy@gmail.com
 """
 import numpy as np
 
