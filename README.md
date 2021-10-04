@@ -13,7 +13,7 @@ How to get started?
 This code was written in python language. To run it, you need python IDE (of course) with the version 3.7 or above. You can use any IDE (my recommend : Spyder, PyCharm).
 
 ### 2. Install necessary packages
-You need to install some packages that may be you didn't have before. These packages list are :
+You need to install some packages that maybe you didn't have before. These packages list are :
 - numpy
 - pandas
 - matplotlib
@@ -64,7 +64,7 @@ If you are using Spyder IDE from Anaconda, you have to set up plotting style. Go
 
 ![image](https://user-images.githubusercontent.com/85453675/135843466-3bbfc1a0-6553-45ca-b6ab-458d5d4098e1.png)
 
-Move to IPython Console and Graphics tab, then, set the Graphics Backend fron Inline to Automatic.
+Move to IPython Console and Graphics tab, then, set the Graphics Backend from Inline to Automatic.
 
 ![image](https://user-images.githubusercontent.com/85453675/135843639-4b72ff43-7247-46df-aee9-2a167792c5e5.png)
 
