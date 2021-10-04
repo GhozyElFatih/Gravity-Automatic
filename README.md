@@ -18,7 +18,9 @@ You need to install some packages that may be you didn't have before. These pack
 - scipy
 - selenium
 - sklearn
+
 To install these packages, simple write :
 ```
 pip install numpy pandas matplotlib scipy selenium sklearn
 ```
+on your console / python command prompt.
