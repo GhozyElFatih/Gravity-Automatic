@@ -8,7 +8,7 @@ I created code that could make you able to download, extract, process, and plot 
 How to get started?
 
 ### 1. Make sure you have python IDE on your PC
-This code was written in python language. To run it, you need python IDE (of course) with the version 3.7 or above. You can use any IDE (my recommend : Spyder, pyCharm).
+This code was written in python language. To run it, you need python IDE (of course) with the version 3.7 or above. You can use any IDE (my recommend : Spyder, PyCharm).
 
 ### 2. Install necessary packages
 You need to install some packages that may be you didn't have before. These packages list are :
@@ -72,10 +72,27 @@ Close and re-open your Spyder. For another IDE, please check how to set up inter
 Now everything have been set up properly (hopefully). Open topex_auto.py file to your IDE. It's time to run the code with a simply pressing F5 or Run button.
 
 Input your area coordinates
-![image](https://user-images.githubusercontent.com/85453675/135844845-a27e57bb-2620-4a81-831a-575e6fc65d8b.png)
+
+![image](https://user-images.githubusercontent.com/85453675/135853538-16ef1621-dbc2-4038-b157-79205a68f7ea.png)
 
 You've got your Simple Bouguer Anomaly
-![image](https://user-images.githubusercontent.com/85453675/135844575-cc9288fa-7242-4915-9ca1-66ed00e76fff.png)
+
+![image](https://user-images.githubusercontent.com/85453675/135853571-25c745ab-4abb-4a98-9d8e-d6f6a8097147.png)
+
+Picking regional and residual boundary range in the spectrum analysis
+
+![image](https://user-images.githubusercontent.com/85453675/135853708-8e04016c-a854-4669-b8d6-747905b6f7d1.png)
+
+Then, we were able to separate regional and residual data
+
+![image](https://user-images.githubusercontent.com/85453675/135853822-d9b976f0-5918-4cd9-9a97-d481e1e8f4d9.png)
+
+Residual data was used to get First Horizontal Derivative and Second Vertical Derivative
+
+![image](https://user-images.githubusercontent.com/85453675/135853957-66273439-4af2-45c9-9865-7bac42e6ad2e.png)
+![image](https://user-images.githubusercontent.com/85453675/135853988-2f0f502e-741e-4db7-a3d6-878f61d40dcb.png)
+
+### Now it's your turn to try
 
 
 
