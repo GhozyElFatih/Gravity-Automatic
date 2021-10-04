@@ -24,3 +24,9 @@ To install these packages, simple write :
 pip install numpy pandas matplotlib scipy selenium sklearn
 ```
 on your console / python command prompt.
+
+### 3. Install webdriver
+To automatically control the browser by using Selenium package, you'll need webdriver.
+You can visit https://www.selenium.dev/downloads/ and scroll down to 'Platforms Supported by Selenium', then, choose your browser
+![image](https://user-images.githubusercontent.com/85453675/135839875-d1e61e4c-d445-45fc-b008-ea401b0a3704.png)
+Click on the 'documentation' link from one of browser you'll use.
