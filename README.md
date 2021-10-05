@@ -21,7 +21,7 @@ You need to install some packages that maybe you didn't have before. These packa
 - Selenium
 - scikit-learn (sklearn)
 
-To install these packages, simple write :
+To install these packages, simply write :
 ```
 pip install numpy pandas matplotlib scipy selenium sklearn
 ```
