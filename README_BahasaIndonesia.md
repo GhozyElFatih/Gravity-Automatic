@@ -72,7 +72,7 @@ Pilih IPython Console, lalu tab Graphics, atur Graphics Backend dari semula Inli
 Tutup dan buka kembali Spyder. Untuk IDE lain, harap cari tau sendiri caranya.
 
 ### 5. Jalankan!
-Sekarang, (semoga) semuanya telah diatur dengan benar. Buka topex_auto.py pada IDE. Lalu klik Run atau pencet tombol F5.
+Sekarang, (semoga) semuanya telah diatur dengan benar. Buka [topex_auto.py](https://github.com/GhozyElFatih/Gravity-Automatic/raw/main/topex_auto.py) pada IDE. Lalu klik Run atau pencet tombol F5.
 
 Masukkan koordinat area yang ingin kamu dapatkan datanya
 
