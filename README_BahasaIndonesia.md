@@ -15,12 +15,12 @@ Kode ini ditulis dalam bahasa pemrograman python. Untuk menjalankannya, kamu (te
 
 ### 2. Instal modul yang dibutuhkan
 Kamu membutuhkan beberapa paket modul untuk menjalankan kode ini. Jika kamu belum punya, pastikan instal modul-modul dibawah ini :
-- numpy
-- pandas
-- matplotlib
-- scipy
-- selenium
-- sklearn
+- NumPy
+- Pandas
+- Matplotlib
+- SciPy
+- Selenium
+- scikit-learn (sklearn)
 
 Untuk menginstalnya, cukup ketik :
 ```
