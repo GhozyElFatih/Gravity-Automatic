@@ -14,12 +14,12 @@ This code was written in python language. To run it, you need python IDE (of cou
 
 ### 2. Install necessary packages
 You need to install some packages that maybe you didn't have before. These packages list are :
-- numpy
-- pandas
-- matplotlib
-- scipy
-- selenium
-- sklearn
+- NumPy
+- Pandas
+- Matplotlib
+- SciPy
+- Selenium
+- scikit-learn (sklearn)
 
 To install these packages, simple write :
 ```
