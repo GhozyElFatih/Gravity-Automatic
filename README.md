@@ -71,7 +71,7 @@ Move to IPython Console and Graphics tab, then, set the Graphics Backend from In
 Close and re-open your Spyder. For another IDE, please check how to set up interactive tools.
 
 ### 5. Run the code!
-Now everything have been set up properly (hopefully). Open topex_auto.py file to your IDE. It's time to run the code with a simply pressing F5 or Run button.
+Now everything have been set up properly (hopefully). Open [topex_auto.py](https://github.com/GhozyElFatih/Gravity-Automatic/raw/main/topex_auto.py) file to your IDE. It's time to run the code with a simply pressing F5 or Run button.
 
 Input your area coordinates
 
@@ -95,6 +95,3 @@ Residual data was used to get First Horizontal Derivative and Second Vertical De
 ![image](https://user-images.githubusercontent.com/85453675/135853988-2f0f502e-741e-4db7-a3d6-878f61d40dcb.png)
 
 ### Now it's your turn to try
-
-
-
